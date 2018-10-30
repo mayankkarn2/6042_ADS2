@@ -173,9 +173,9 @@ class Graphmatrix implements Graph {
     /**
      * Constructs the object.
      *
-     * @param      vertex  The vertex
-     * @param      edge    The edge
-     * @param      cities  The cities
+     * @param      v  The vertex.
+     * @param      e    The edge.
+     * @param      c  The cities.
      */
     Graphmatrix(final int v, final int e, final String[] c) {
         this.cities = c;
@@ -196,7 +196,7 @@ class Graphmatrix implements Graph {
      */
     public void addEdge(final int vertex1,
         final int vertex2) {
-        if(vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
+        if (vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
             return;
         }
         matrix[vertex1][vertex2] = 1;
@@ -210,11 +210,11 @@ class Graphmatrix implements Graph {
      *
      * @return     Adjacency list of a vertex.
      */
-    public int[] adj(int ver) {
+    public int[] adj(final int ver) {
         return matrix[ver];
     }
     /**
-     * Vertices
+     * Vertices.
      *
      * @return     Vertex.
      */
@@ -237,25 +237,26 @@ class Graphmatrix implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int vertex1, int vertex2) {
+    public boolean hasEdge(final int vertex1,
+        final int vertex2) {
         return matrix[vertex1][vertex2] == 1;
     }
     /**
      * Prints thhe Graph.
      */
     public void print() {
-        if(edge == 0) {
+        if (edge == 0) {
             System.out.println("No edges");
         } else {
-            for(int i = 0; i < vertex - 1; i++) {
+            for (int i = 0; i < vertex - 1; i++) {
                 String s = "";
-                for(int each : matrix[i]) {
+                for (int each : matrix[i]) {
                     s += each + " ";
                 }
                 System.out.println(s);
             }
             String s = "";
-            for(int each : matrix[vertex - 1]) {
+            for (int each : matrix[vertex - 1]) {
                 s += each + " ";
             }
             System.out.println(s.substring(0, s.length() - 1));
@@ -265,7 +266,13 @@ class Graphmatrix implements Graph {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Nothing happens here.
+    }
     /**
      * The main function.
      *
@@ -277,9 +284,9 @@ class Solution {
         int vertex = Integer.parseInt(s.nextLine());
         int edge = Integer.parseInt(s.nextLine());
         String[] cities = s.nextLine().split(",");
-        if(type.equals("List")) {
+        if (type.equals("List")) {
             GraphList l = new GraphList(vertex, edge, cities);
-            for(int k = 0; k < edge; k++) {
+            for (int k = 0; k < edge; k++) {
                 String[] tokens = s.nextLine().split(" ");
                 l.addEdge(Integer.parseInt(tokens[0]),
                     Integer.parseInt(tokens[1]));

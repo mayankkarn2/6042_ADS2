@@ -1,22 +1,4 @@
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:176:8: Unused @param tag for 'vertex'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:177:8: Unused @param tag for 'edge'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:178:8: Unused @param tag for 'cities'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:180:27: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:180:40: Expected @param tag for 'e'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:180:58: Expected @param tag for 'c'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:199:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:213:22: Parameter ver should be final. [FinalParameters]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:216: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:240:28: Parameter vertex1 should be final. [FinalParameters]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:240:41: Parameter vertex2 should be final. [FinalParameters]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:247:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:250:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:252:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:258:16: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:268:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:280:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\1.1 Graph\Solution.java:282:16: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 1 errors.
