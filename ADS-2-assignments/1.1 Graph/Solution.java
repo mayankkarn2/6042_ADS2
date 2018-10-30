@@ -55,14 +55,13 @@ class GraphList implements Graph {
     /**
      * Constructs the object.
      *
-     * @param      vertex  The vertex
-     * @param      edge    The edge
-     * @param      cities  The cities
+     * @param      v  The vertex
+     * @param      e    The edge
+     * @param      c  The cities
      */
-    GraphList(final int vertex, final int edge,
-        final String[] cities) {
-        this.cities = cities;
-        this.vertex = vertex;
+    GraphList(final int v, final int e, final String[] c) {
+        this.cities = c;
+        this.vertex = v;
         this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[vertex];
         for(int i = 0; i < vertex; i++) {
