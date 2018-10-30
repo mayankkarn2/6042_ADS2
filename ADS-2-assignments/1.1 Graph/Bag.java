@@ -55,7 +55,7 @@ public class Bag<Item> implements Iterable<Item> {
      *
      * @param      item  The item.
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
