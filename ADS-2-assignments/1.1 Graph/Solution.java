@@ -64,7 +64,7 @@ class GraphList implements Graph {
         this.vertex = v;
         this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[vertex];
-        for(int i = 0; i < vertex; i++) {
+        for (int i = 0; i < vertex; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
@@ -74,7 +74,8 @@ class GraphList implements Graph {
      * @param      vertex1  The vertex 1
      * @param      vertex2  The vertex 2
      */
-    public void addEdge(int vertex1, int vertex2) {
+    public void addEdge(final int vertex1,
+        final int vertex2) {
         if(vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
             return;
         }
