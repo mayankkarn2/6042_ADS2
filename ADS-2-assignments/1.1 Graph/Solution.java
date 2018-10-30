@@ -76,12 +76,12 @@ class GraphList implements Graph {
      */
     public void addEdge(final int vertex1,
         final int vertex2) {
-        if(vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
+        if (vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
             return;
         }
         adj[vertex1].add(vertex2);
         adj[vertex2].add(vertex1);
-        edge++; 
+        edge++;
     }
     /**
      * Iterable.
@@ -90,7 +90,7 @@ class GraphList implements Graph {
      *
      * @return     Adjacent list of Vertex.
      */
-    public Iterable<Integer> adj(int ver) {
+    public Iterable<Integer> adj(final int ver) {
         return adj[ver];
     }
     /**
@@ -117,9 +117,10 @@ class GraphList implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int vertex1, int vertex2) {
+    public boolean hasEdge(final int vertex1,
+        final int vertex2) {
         for (int e : adj[vertex1]) {
-            if(e == vertex2) {
+            if (e == vertex2) {
                 return true;
             }
         }
@@ -129,21 +130,20 @@ class GraphList implements Graph {
      * Prints the Graph.
      */
     public void print() {
-        if(edge == 0) {
+        if (edge == 0) {
             System.out.println("No edges");
-        }
-        else {
-            for(int i = 0; i < vertex - 1; i++) {
+        } else {
+            for (int i = 0; i < vertex - 1; i++) {
                 String str = "";
                 str += cities[i] + ": ";
-                for(int each : adj[i]) {
+                for (int each : adj[i]) {
                     str += cities[each] + " ";
                 }
                 System.out.println(str);
             }
             String str = "";
             str += cities[vertex - 1] + ": ";
-            for(int each : adj[vertex - 1]) {
+            for (int each : adj[vertex - 1]) {
                 str += cities[each] + " ";
             }
             System.out.println(str.substring(0, str.length() - 1));
@@ -177,13 +177,13 @@ class Graphmatrix implements Graph {
      * @param      edge    The edge
      * @param      cities  The cities
      */
-    Graphmatrix(int vertex, int edge, String[] cities) {
-        this.cities = cities;
-        matrix = new int[vertex][vertex];
-        this.vertex = vertex;
+    Graphmatrix(final int v, final int e, final String[] c) {
+        this.cities = c;
+        matrix = new int[v][v];
+        this.vertex = v;
         this.edge = 0;
-        for(int i = 0; i < vertex; i++) {
-            for(int j = 0; j < vertex; j++) {
+        for (int i = 0; i < vertex; i++) {
+            for (int j = 0; j < vertex; j++) {
                 matrix[i][j] = 0;
             }
         }
@@ -194,7 +194,8 @@ class Graphmatrix implements Graph {
      * @param      vertex1  The vertex 1
      * @param      vertex2  The vertex 2
      */
-    public void addEdge(int vertex1, int vertex2) {
+    public void addEdge(final int vertex1,
+        final int vertex2) {
         if(vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
             return;
         }
@@ -231,8 +232,8 @@ class Graphmatrix implements Graph {
     /**
      * Determines if it has edge.
      *
-     * @param      vertex1  The vertex 1
-     * @param      vertex2  The vertex 2
+     * @param      vertex1  The vertex 1.
+     * @param      vertex2  The vertex 2.
      *
      * @return     True if has edge, False otherwise.
      */
