@@ -1,15 +1,64 @@
 import java.util.Scanner;
+/**
+ * Interface for graph.
+ */
 interface Graph {
+	/**
+	 * Count of vertices.
+	 *
+	 * @return     Count of vertices.
+	 */
     public int vertices();
+    /**
+     * Count of Edges.
+     *
+     * @return     Count of Edges.
+     */
     public int edges();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     Vertex-1.
+     * @param      w     Vertex-2.
+     */
     public void addEdge(int v, int w);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     Vertex-1.
+     * @param      w     Vertex-2.
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w);
 }
+/**
+ * List of graphs.
+ */
 class GraphList implements Graph {
+	/**
+	 * Cities of String.
+	 */
 	private String[] cities;
+	/**
+	 * Vertex of Graph.
+	 */
 	private int vertex;
+	/**
+	 * Edges of Graph.
+	 */
 	private int edge;
+	/**
+	 * Bag of Adjacent nodes.
+	 */
 	private Bag<Integer>[] adj;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      vertex  The vertex
+	 * @param      edge    The edge
+	 * @param      cities  The cities
+	 */
 	GraphList(int vertex, int edge, String[] cities) {
 		this.cities = cities;
 		this.vertex = vertex;
@@ -19,6 +68,12 @@ class GraphList implements Graph {
 			adj[i] = new Bag<Integer>();
 		}
 	}
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      vertex1  The vertex 1
+	 * @param      vertex2  The vertex 2
+	 */
 	public void addEdge(int vertex1, int vertex2) {
 		if(vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
 			return;
@@ -27,15 +82,40 @@ class GraphList implements Graph {
 		adj[vertex2].add(vertex1);
 		edge++; 
 	}
+	/**
+	 * Iterable.
+	 *
+	 * @param      ver   The vertex.
+	 *
+	 * @return     Adjacent list of Vertex.
+	 */
 	public Iterable<Integer> adj(int ver) {
 		return adj[ver];
 	}
+	/**
+	 * returns the vertex.
+	 *
+	 * @return     vertex.
+	 */
 	public int vertices() {
 		return this.vertex;
 	}
+	/**
+	 * Returns Edges.
+	 *
+	 * @return     edge.
+	 */
 	public int edges() {
 		return this.edge;
 	}
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      vertex1  The vertex 1
+	 * @param      vertex2  The vertex 2
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
 	public boolean hasEdge(int vertex1, int vertex2) {
 		for (int e : adj[vertex1]) {
 			if(e == vertex2) {
@@ -44,6 +124,9 @@ class GraphList implements Graph {
 		}
 		return false;
 	}
+	/**
+	 * Prints the Graph.
+	 */
 	public void print() {
 		if(edge == 0) {
 			System.out.println("No edges");
@@ -66,11 +149,33 @@ class GraphList implements Graph {
 		}
 	}
 }
+/**
+ * Class for graphmatrix.
+ */
 class Graphmatrix implements Graph {
+	/**
+	 * String of cities.
+	 */
 	private String[] cities;
+	/**
+	 * Matrix array.
+	 */
 	private int[][] matrix;
+	/**
+	 * Vertex.
+	 */
 	private int vertex;
+	/**
+	 * Edge.
+	 */
 	private int edge;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      vertex  The vertex
+	 * @param      edge    The edge
+	 * @param      cities  The cities
+	 */
 	Graphmatrix(int vertex, int edge, String[] cities) {
 		this.cities = cities;
 		matrix = new int[vertex][vertex];
@@ -82,6 +187,12 @@ class Graphmatrix implements Graph {
 			}
 		}
 	}
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      vertex1  The vertex 1
+	 * @param      vertex2  The vertex 2
+	 */
 	public void addEdge(int vertex1, int vertex2) {
 		if(vertex1 == vertex2 || hasEdge(vertex1, vertex2)) {
 			return;
@@ -90,18 +201,46 @@ class Graphmatrix implements Graph {
 		matrix[vertex2][vertex1] = 1;
 		edge++;
 	}
+	/**
+	 * Adjacency list of a vertex.
+	 *
+	 * @param      ver   The vertex.
+	 *
+	 * @return     Adjacency list of a vertex.
+	 */
 	public int[] adj(int ver) {
 		return matrix[ver];
 	}
+	/**
+	 * Vertices
+	 *
+	 * @return     Vertex.
+	 */
 	public int vertices() {
 		return this.vertex;
 	}
+	/**
+	 * Edges.
+	 *
+	 * @return     Edges.
+	 */
 	public int edges() {
 		return this.edge;
 	}
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      vertex1  The vertex 1
+	 * @param      vertex2  The vertex 2
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
 	public boolean hasEdge(int vertex1, int vertex2) {
 		return matrix[vertex1][vertex2] == 1;
 	}
+	/**
+	 * Prints thhe Graph.
+	 */
 	public void print() {
 		if(edge == 0) {
 			System.out.println("No edges");
@@ -121,8 +260,16 @@ class Graphmatrix implements Graph {
 		}
 	}
 }
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * The main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		String type = s.nextLine();
 		int vertex = Integer.parseInt(s.nextLine());
