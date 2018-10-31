@@ -1,4 +1,3 @@
-import java.util.NoSuchElementException;
 /**
  * Class for graph.
  */
@@ -11,11 +10,11 @@ public class Graph {
     /**
      * Vertices.
      */
-    private final int Vertex;
+    private final int vertex;
     /**
      * Edges
      */
-    private int Edge;
+    private int edge;
     /**
      * Bag of integers.
      */
@@ -27,10 +26,10 @@ public class Graph {
      * @param  Vertex number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Graph(int V) {
+    public Graph(final int V) {
         if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        this.Vertex = V;
-        this.Edge = 0;
+        this.vertex = V;
+        this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[V];
         for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
@@ -42,7 +41,7 @@ public class Graph {
      * @return the number of vertices in this graph
      */
     public int Vertex() {
-        return Vertex;
+        return vertex;
     }
     /**
      * Returns the number of edges in this graph.
@@ -50,17 +49,17 @@ public class Graph {
      * @return the number of edges in this graph
      */
     public int Edge() {
-        return Edge;
+        return edge;
     }
     /**
      * Checks if vertex is valid.
      *
      * @param      v     vertex.
      */
-    private void validateVertex(int v) {
-        if (v < 0 || v >= Vertex) {
+    private void validateVertex(final int v) {
+        if (v < 0 || v >= vertex) {
             throw new IllegalArgumentException("vertex "
-                + v + " is not between 0 and " + (Vertex - 1));
+                + v + " is not between 0 and " + (vertex - 1));
         }
     }
     /**
@@ -68,12 +67,12 @@ public class Graph {
      *
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both {{@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
-        Edge++;
+        edge++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -85,7 +84,7 @@ public class Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         for (int each : adj[w]) {
             if (each == v) {
                 return true;
@@ -100,7 +99,7 @@ public class Graph {
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -111,7 +110,7 @@ public class Graph {
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
@@ -123,8 +122,8 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(Vertex + " vertices, " + Edge + " edges " + NEWLINE);
-        for (int v = 0; v < Vertex; v++) {
+        s.append(vertex + " vertices, " + edge + " edges " + NEWLINE);
+        for (int v = 0; v < vertex; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
