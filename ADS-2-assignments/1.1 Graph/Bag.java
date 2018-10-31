@@ -9,7 +9,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * N.
      */
-    private int Not;
+    private int not;
     /**
      * First node.
      */
@@ -32,7 +32,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        Not = 0;
+        not = 0;
     }
     /**
      * Determines if empty.
@@ -48,7 +48,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     N.
      */
     public int size() {
-        return Not;
+        return not;
     }
     /**
      * Adds item to list.
@@ -60,7 +60,7 @@ public class Bag<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        Not++;
+        not++;
     }
     /**
      * Iterator for Bag class.
