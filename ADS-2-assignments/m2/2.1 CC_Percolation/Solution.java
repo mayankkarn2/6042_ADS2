@@ -18,7 +18,7 @@ class Percolation {
 		graph = new Graph(gridSize + 2);
 	}
 	public void open(int row, int column) {
-		if(isOpen(row, column)) {
+		if(!isOpen(row, column)) {
 			connected[row - 1][column - 1] = true;
 			opened++;
 		}
@@ -58,7 +58,7 @@ class Percolation {
 		return c.connected(upper, lower);
 	}
 	private int getIndex(int row, int column) {
-		return size * (row - 1) + (column - 1);
+		return size * (row - 1) + (column);
 	}
 }
 public final class Solution {
