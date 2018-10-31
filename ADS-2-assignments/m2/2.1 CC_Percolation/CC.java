@@ -21,7 +21,7 @@ public class CC {
     /**
      * Computes the connected components of the undirected graph {@code G}.
      *
-     * @param G the undirected graph
+     * @param gra the undirected graph
      */
     public CC(final Graph gra) {
         marked = new boolean[gra.V()];
@@ -37,7 +37,7 @@ public class CC {
     /**
      * DFS of the Graph.
      *
-     * @param      G     Graph.
+     * @param      gra     Graph.
      * @param      v     Starting Vertex.
      */
     private void dfs(final Graph gra, final int v) {
@@ -68,7 +68,7 @@ public class CC {
      * @return the number of vertices.
      * @throws IllegalArgumentException.
      */
-    public int size(int v) {
+    public int size(final int v) {
         validateVertex(v);
         return size[id[v]];
     }
@@ -120,9 +120,9 @@ public class CC {
      * @param      v     vertex
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
+        int ver = marked.length;
+        if (v < 0 || v >= ver)
             throw new IllegalArgumentException("vertex " + v +
-                " is not between 0 and " + (V-1));
+                " is not between 0 and " + (ver-1));
     }
 }
