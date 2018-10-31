@@ -58,7 +58,7 @@ class Percolation {
         return cc.connected(top, bottom);
     }
     private int getIndex(final int row, final int col) {
-        return n * (row - 1) + col;
+        return n * (row - 1) + (col - 1);
     }
 }
 public final class Solution {
