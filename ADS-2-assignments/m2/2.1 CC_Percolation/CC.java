@@ -1,3 +1,6 @@
+/**
+ * Class for cc.
+ */
 public class CC {
     /**
      * marked[v] = has vertex v been marked.
@@ -20,13 +23,13 @@ public class CC {
      *
      * @param G the undirected graph
      */
-    public CC(final Graph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+    public CC(final Graph gra) {
+        marked = new boolean[gra.V()];
+        id = new int[gra.V()];
+        size = new int[gra.V()];
+        for (int v = 0; v < gra.V(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(gra, v);
                 count++;
             }
         }
@@ -37,13 +40,13 @@ public class CC {
      * @param      G     Graph.
      * @param      v     Starting Vertex.
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph gra, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : gra.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(gra, w);
             }
         }
     }
