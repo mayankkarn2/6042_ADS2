@@ -24,13 +24,12 @@ public class Graph {
      * Initializes an empty graph with {@code V} vertices and 0 edges.
      * param V the number of vertices
      *
-     * @param  ver number of vertices
+     * @param  ve number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Graph(final int ve) {
-        if (ve < 0) { 
-            throw new IllegalArgumentException
-            ("Number of vertices must be nonnegative");
+        if (ve < 0) {
+            throw new IllegalArgumentException("Number");
         }
         this.ver = ve;
         this.edg = 0;
@@ -57,11 +56,16 @@ public class Graph {
     public int efg() {
         return edg;
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * Validates the vertex.
+     *
+     * @param      v     Vertex.
+     */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= ver)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (ver - 1));
+        if (v < 0 || v >= ver) {
+            throw new IllegalArgumentException("vertex " + v
+                + "is not" + " between 0 and " + (ver - 1));
+        }
     }
 
     /**
@@ -69,7 +73,7 @@ public class Graph {
      *
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both.
      */
     public void addEdge(final int v, final int w) {
         validateVertex(v);
@@ -119,13 +123,11 @@ public class Graph {
         validateVertex(v);
         return adj[v].size();
     }
-
-
     /**
      * Returns a string representation of this graph.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists
+     * @return the number of vertices followed by the.
+     *         followed by the adjacency lists
      */
     public String toString() {
         StringBuilder s = new StringBuilder();

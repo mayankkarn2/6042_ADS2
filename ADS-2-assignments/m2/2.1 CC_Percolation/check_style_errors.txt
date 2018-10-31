@@ -3,18 +3,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:27:8: Unused @param tag for 'ver'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:30:28: Expected @param tag for 've'. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:31: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:33:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:62:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:63: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:64: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:72: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:127: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.
 Starting audit...
