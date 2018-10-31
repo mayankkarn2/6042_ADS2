@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 class Percolation {
 	private Graph graph;
 	private int size;
@@ -17,7 +18,7 @@ class Percolation {
 		graph = new Graph(gridSize + 2);
 	}
 	public void open(int row, int column) {
-		if(!isOpen(row, column)) {
+		if(isOpen(row, column)) {
 			connected[row - 1][column - 1] = true;
 			opened++;
 		}
