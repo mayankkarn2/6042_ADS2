@@ -58,7 +58,7 @@ class Percolation {
 		return c.connected(upper, lower);
 	}
 	private int getIndex(int row, int column) {
-		return size * (row - 1) + (column);
+		return size * (row - 1) + (column - 1);
 	}
 }
 public final class Solution {
