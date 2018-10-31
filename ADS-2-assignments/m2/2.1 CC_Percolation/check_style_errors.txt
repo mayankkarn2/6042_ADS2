@@ -4,7 +4,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:10:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:11:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:12:5: Missing a Javadoc comment. [JavadocVariable]
@@ -29,7 +28,7 @@ Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:109:23: Parameter v should be final. [FinalParameters]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:118: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 Audit done.
 Starting audit...
