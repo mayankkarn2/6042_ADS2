@@ -125,7 +125,7 @@ class Percolation {
 	 *
 	 * @return     The index.
 	 */
-	private int getIndex(int row, int column) {
+	private int getIndex(final int row, final int column) {
 		return size * (row - 1) + (column - 1);
 	}
 }
@@ -144,7 +144,7 @@ public final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int size = Integer.parseInt(s.nextLine());
 		Percolation p = new Percolation(size);

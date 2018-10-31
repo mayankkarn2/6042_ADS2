@@ -97,15 +97,12 @@ Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:72: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:75: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:98:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:128:30: Parameter row should be final. [FinalParameters]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:128:39: Parameter column should be final. [FinalParameters]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:132: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:147:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:151:22: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:153: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:153:60: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:3:5: Missing a Javadoc comment. [JavadocVariable]
