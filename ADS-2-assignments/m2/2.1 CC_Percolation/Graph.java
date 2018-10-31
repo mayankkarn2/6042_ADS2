@@ -1,67 +1,53 @@
 import java.util.NoSuchElementException;
-/**
- * Class for graph.
- */
+
 public class Graph {
-    /**
-     * Separates the line.
-     */
     private static final String NEWLINE = System.getProperty("line.separator");
-    /**
-     * Vertices.
-     */
-    private final int vertex;
-    /**
-     * Edges
-     */
-    private int edge;
-    /**
-     * Bag of integers.
-     */
+
+    private final int V;
+    private int E;
     private Bag<Integer>[] adj;
+
     /**
      * Initializes an empty graph with {@code V} vertices and 0 edges.
      * param V the number of vertices
      *
-     * @param  Vertex number of vertices
+     * @param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Graph(int V) {
         if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        vertex = V;
-        edge = 0;
+        this.V = V;
+        this.E = 0;
         adj = (Bag<Integer>[]) new Bag[V];
         for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
+
     /**
      * Returns the number of vertices in this graph.
      *
      * @return the number of vertices in this graph
      */
-    public int Vertex() {
-        return vertex;
+    public int V() {
+        return V;
     }
+
     /**
      * Returns the number of edges in this graph.
      *
      * @return the number of edges in this graph
      */
-    public int Edge() {
-        return edge;
+    public int E() {
+        return E;
     }
-    /**
-     * Checks if vertex is valid.
-     *
-     * @param      v     vertex.
-     */
+
+    // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
-        if (v < 0 || v >= vertex) {
-            throw new IllegalArgumentException("vertex "
-                + v + " is not between 0 and " + (vertex - 1));
-        }
+        if (v < 0 || v >= V)
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
     }
+
     /**
      * Adds the undirected edge v-w to this graph.
      *
@@ -72,10 +58,11 @@ public class Graph {
     public void addEdge(int v, int w) {
         validateVertex(v);
         validateVertex(w);
-        edge++;
+        E++;
         adj[v].add(w);
         adj[w].add(v);
     }
+
     /**
      * Determines if it has edge.
      *
@@ -92,6 +79,7 @@ public class Graph {
         }
         return false;
     }
+
     /**
      * Returns the vertices adjacent to vertex {@code v}.
      *
@@ -103,6 +91,7 @@ public class Graph {
         validateVertex(v);
         return adj[v];
     }
+
     /**
      * Returns the degree of vertex {@code v}.
      *
@@ -114,6 +103,8 @@ public class Graph {
         validateVertex(v);
         return adj[v].size();
     }
+
+
     /**
      * Returns a string representation of this graph.
      *
@@ -122,8 +113,8 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertex + " vertices, " + edge + " edges " + NEWLINE);
-        for (int v = 0; v < vertex; v++) {
+        s.append(V + " vertices, " + E + " edges " + NEWLINE);
+        for (int v = 0; v < V; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
