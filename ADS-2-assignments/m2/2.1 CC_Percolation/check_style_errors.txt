@@ -1,13 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:124: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:125:62: '+' should be on a new line. [OperatorWrap]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:126:48: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:126:49: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]

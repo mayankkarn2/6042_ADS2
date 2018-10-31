@@ -121,8 +121,9 @@ public class CC {
      */
     private void validateVertex(final int v) {
         int ver = marked.length;
-        if (v < 0 || v >= ver)
-            throw new IllegalArgumentException("vertex " + v +
-                " is not between 0 and " + (ver-1));
+        if (v < 0 || v >= ver) {
+            throw new IllegalArgumentException("vertex " + v
+                + " is not between 0 and " + (ver - 1));
+        }
     }
 }
