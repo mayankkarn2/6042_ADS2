@@ -10,11 +10,11 @@ public class Graph {
     /**
      * Vertices.
      */
-    private final int Vertex;
+    private final int vertex;
     /**
      * Edges
      */
-    private int Edge;
+    private int edge;
     /**
      * Bag of integers.
      */
@@ -28,8 +28,8 @@ public class Graph {
      */
     public Graph(int V) {
         if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        this.Vertex = V;
-        this.Edge = 0;
+        vertex = V;
+        edge = 0;
         adj = (Bag<Integer>[]) new Bag[V];
         for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
@@ -41,7 +41,7 @@ public class Graph {
      * @return the number of vertices in this graph
      */
     public int Vertex() {
-        return Vertex;
+        return vertex;
     }
     /**
      * Returns the number of edges in this graph.
@@ -49,7 +49,7 @@ public class Graph {
      * @return the number of edges in this graph
      */
     public int Edge() {
-        return Edge;
+        return edge;
     }
     /**
      * Checks if vertex is valid.
@@ -57,9 +57,9 @@ public class Graph {
      * @param      v     vertex.
      */
     private void validateVertex(int v) {
-        if (v < 0 || v >= Vertex) {
+        if (v < 0 || v >= vertex) {
             throw new IllegalArgumentException("vertex "
-                + v + " is not between 0 and " + (Vertex - 1));
+                + v + " is not between 0 and " + (vertex - 1));
         }
     }
     /**
@@ -72,7 +72,7 @@ public class Graph {
     public void addEdge(int v, int w) {
         validateVertex(v);
         validateVertex(w);
-        Edge++;
+        edge++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -122,8 +122,8 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(Vertex + " vertices, " + Edge + " edges " + NEWLINE);
-        for (int v = 0; v < Vertex; v++) {
+        s.append(vertex + " vertices, " + edge + " edges " + NEWLINE);
+        for (int v = 0; v < vertex; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");

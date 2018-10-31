@@ -56,9 +56,7 @@ Checkstyle ends with 31 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:13:23: Name 'Vertex' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:17: Name 'Edge' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:26:8: Unused @param tag for 'Vertex'. [JavadocMethod]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:29:18: Parameter V should be final. [FinalParameters]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:29:22: Expected @param tag for 'V'. [JavadocMethod]
@@ -77,7 +75,7 @@ Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:113:23: Parameter v should be final. [FinalParameters]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:120: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 20 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
