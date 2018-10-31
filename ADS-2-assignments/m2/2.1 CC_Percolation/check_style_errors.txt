@@ -6,25 +6,3 @@ Starting audit...
 Audit done.
 Starting audit...
 Audit done.
-Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:20:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:44:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:47:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:53:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:56:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:60:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:64: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:65:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution_Nikita.java:68:5: Missing a Javadoc comment. [JavadocMethod]
-Audit done.
-Checkstyle ends with 19 errors.
