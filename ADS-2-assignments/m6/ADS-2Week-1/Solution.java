@@ -4,11 +4,27 @@ class PageRank {
 	Digraph d;
 	double value;
 	Digraph reverse;
+	boolean[] marked;
 	PageRank(Digraph d) {
 		this.d = d;
 		value = (d.V());
 		reverse = d.reverse();
-		System.out.println(d);
+		marked = new boolean[d.V()];
+		for(int i = 0; i < d.V(); i++) {
+			if(d.outdegree(i) > 0) {
+				marked[i] = true;
+			}
+		}
+		for(int i = 0; i < d.V(); i++) {
+			if(d.outdegree(i) == 0) {
+				for(int j = 0; j < d.V();j++) {
+					if(i!=j && marked[j] == true) {
+						d.addEdge(i,j);
+					}
+				}
+			}
+		}
+		// System.out.println(d);
 	}
 	public double getPR(int x) {
 		double pr = 1.0/value;
@@ -31,6 +47,7 @@ class PageRank {
 				Iterable<Integer> it = reverse.adj(j);
 				double cal = 0.0;
 				for(Integer i : it) {
+					// System.out.println(i);
 					cal += prs[i]/d.outdegree(i);
 				}
 				new_prs[j] = cal;
@@ -46,6 +63,14 @@ class WebSearch {
 
 
 public class Solution {
+		// read the first line of the input to get the number of vertices
+		// iterate count of vertices times 
+		// to read the adjacency list from std input
+		// and build the graph	
+		// Create page rank object and pass the graph object to the constructor
+		// print the page rank object
+		// This part is only for the final test case
+		// File path to the web content
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int vertices = s.nextInt();
@@ -53,37 +78,25 @@ public class Solution {
 		Digraph d = new Digraph(vertices);
 		for (int i = 0; i < vertices; i++) {
 			String[] tokens = s.nextLine().split(" ");
-			if(tokens.length == 1) {
-				for(int j = 0; j < vertices; j++) {
-					d.addEdge(i,j);
-				}
-			}
-			else {
-				for(int j = 1; j < tokens.length; j++) {
+			// if(tokens.length == 1) {
+			// 	for(int j = 0; j < vertices; j++) {
+			// 		d.addEdge(i,j);
+			// 	}
+			// }
+			// else {
+			// 	for(int j = 1; j < tokens.length; j++) {
+			// 		d.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
+			// 	}
+			// }
+			for(int j = 1; j < tokens.length; j++) {
 					d.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
 				}
-			}
 		}
+		System.out.println(d);
 		PageRank p = new PageRank(d);
 		for(int i = 0; i < vertices; i++) {
 			System.out.println(i + " - " + p.getPR(i));
 		}
-
-
-		// read the first line of the input to get the number of vertices
-
-		// iterate count of vertices times 
-		// to read the adjacency list from std input
-		// and build the graph
-		
-		
-		// Create page rank object and pass the graph object to the constructor
-		
-		// print the page rank object
-		
-		// This part is only for the final test case
-		
-		// File path to the web content
 		String file = "WebContent.txt";
 		
 		// instantiate web search object
