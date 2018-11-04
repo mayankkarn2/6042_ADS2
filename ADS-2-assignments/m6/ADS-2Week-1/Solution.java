@@ -53,10 +53,8 @@ public class Solution {
 		Digraph d = new Digraph(vertices);
 		for (int i = 0; i < vertices; i++) {
 			String[] tokens = s.nextLine().split(" ");
-			// System.out.println(tokens.length);
 			if(tokens.length == 1) {
 				for(int j = 0; j < vertices; j++) {
-					// System.out.println(i+" "+j);
 					d.addEdge(i,j);
 				}
 			}
