@@ -144,16 +144,13 @@ Audit done.
 Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:13: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:13:63: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:17:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:24: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:24:63: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

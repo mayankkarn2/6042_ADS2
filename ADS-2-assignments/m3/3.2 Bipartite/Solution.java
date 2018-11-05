@@ -1,8 +1,19 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
-
+		//Private Solution.
 	}
+	/**
+	 * The main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int v = Integer.parseInt(s.nextLine());
