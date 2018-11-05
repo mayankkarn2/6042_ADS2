@@ -1,7 +1,4 @@
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:5: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:17:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
