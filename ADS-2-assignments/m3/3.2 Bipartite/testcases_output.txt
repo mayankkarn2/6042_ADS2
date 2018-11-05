@@ -27,7 +27,7 @@ Expected Output:
 Graph is not a bipartite
 
 Your Output: 
-Graph is not bipatite
+Graph is not bipartite
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,6 +35,6 @@ Expected Output:
 Graph is not a bipartite
 
 Your Output: 
-Graph is not bipatite
+Graph is not bipartite
 ----------------------------------------
 
