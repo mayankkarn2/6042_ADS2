@@ -10,20 +10,20 @@ class PageRank {
 		value = (d.V());
 		reverse = d.reverse();
 		marked = new boolean[d.V()];
-		for(int i = 0; i < d.V(); i++) {
-			if(d.outdegree(i) > 0) {
-				marked[i] = true;
-			}
-		}
-		for(int i = 0; i < d.V(); i++) {
-			if(d.outdegree(i) == 0) {
-				for(int j = 0; j < d.V();j++) {
-					if(i!=j && marked[j] == true) {
-						d.addEdge(i,j);
-					}
-				}
-			}
-		}
+		// for(int i = 0; i < d.V(); i++) {
+		// 	if(d.outdegree(i) > 0) {
+		// 		marked[i] = true;
+		// 	}
+		// }
+		// for(int i = 0; i < d.V(); i++) {
+		// 	if(d.outdegree(i) == 0) {
+		// 		for(int j = 0; j < d.V();j++) {
+		// 			if(i!=j && marked[j] == true) {
+		// 				d.addEdge(i,j);
+		// 			}
+		// 		}
+		// 	}
+		// }
 		// System.out.println(d);
 	}
 	public double getPR(int x) {
@@ -90,9 +90,18 @@ public class Solution {
 			// }
 			for(int j = 1; j < tokens.length; j++) {
 					d.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
-				}
+			}
 		}
 		System.out.println(d);
+		for(int i = 0; i < d.V(); i++) {
+			if(d.outdegree(i) == 0) {
+				for(int j = 0; j < d.V(); j++) {
+					if(i!=j) {
+						d.addEdge(i,j);
+					}
+				}
+			}
+		}
 		PageRank p = new PageRank(d);
 		for(int i = 0; i < vertices; i++) {
 			System.out.println(i + " - " + p.getPR(i));
