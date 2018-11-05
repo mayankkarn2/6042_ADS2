@@ -17,7 +17,7 @@ class Solution {
 		}
 		DirectedCycle dc = new DirectedCycle(d);
 		if(dc.hasCycle()) {
-			System.out.println("Cycle exits.");
+			System.out.println("Cycle exists.");
 		} else {
 			System.out.println("Cycle doesn't exists.");
 		}
