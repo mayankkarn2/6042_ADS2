@@ -43,6 +43,10 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
+        if(cases == null) {
+            System.out.println("picture is null");
+            return;
+        }
         SeamCarver seamCarver = null;
         try {
             switch (cases) {
