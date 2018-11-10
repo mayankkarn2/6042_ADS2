@@ -41,6 +41,31 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] tokens2 = sc.nextLine().split(" ");
+			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(g, Integer.parseInt(tokens2[2]));
+			DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(g, Integer.parseInt(tokens2[1]));
+			if(sp1.hasPathTo(Integer.parseInt(tokens2[1])) && sp2.hasPathTo(Integer.parseInt(tokens2[0]))) {
+				System.out.println(sp1.distTo(Integer.parseInt(tokens2[1])) + sp2.distTo(Integer.parseInt(tokens2[0])));
+				Iterable<Edge> it1 = sp1.pathTo(Integer.parseInt(tokens2[1]));
+				for(Edge e : it1) {
+					System.out.print(e + " ");
+				}
+				Iterable<Edge> it2 = sp2.pathTo(Integer.parseInt(tokens2[0]));
+				for(Edge e : it2) {
+					System.out.print(e + " ");
+				}
+			}
+			else {
+				System.out.println("No Path Found.");
+			}
+			// Iterable<Edge> it1 = sp1.pathTo(Integer.parseInt(tokens2[1]));
+			// for(Edge e : it1) {
+			// 	System.out.print(e);
+			// }
+			// Iterable<Edge> it2 = sp2.pathTo(Integer.parseInt(tokens2[2]));
+			// for(Edge e : it2) {
+			// 	System.out.print(e);
+			// }
 			break;
 
 		default:
