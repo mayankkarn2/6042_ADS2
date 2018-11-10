@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
@@ -24,7 +24,7 @@ public class Solution {
 		sc.nextLine();
 		EdgeWeightedGraph gr = new EdgeWeightedGraph(cities);
 		EdgeWeightedDigraph g = new EdgeWeightedDigraph(cities);
-		for(int i = 0; i < roadLines; i++) {
+		for (int i = 0; i < roadLines; i++) {
 			String[] tokens = sc.nextLine().split(" ");
 			gr.addEdge(new Edge(Integer.parseInt(tokens[0]),
 				Integer.parseInt(tokens[1]),
@@ -42,14 +42,17 @@ public class Solution {
 			System.out.println(gr);
 			break;
 		case "DirectedPaths":
-			// Handle the case of DirectedPaths, where two integers are given.
+			// Handle the case of DirectedPaths,
+			// where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			String[] tokens1 = sc.nextLine().split(" ");
-			DijkstraSP sp = new DijkstraSP(g, Integer.parseInt(tokens1[0]));
+			DijkstraSP sp = new DijkstraSP(g,
+				Integer.parseInt(tokens1[0]));
 			if(sp.hasPathTo(Integer.parseInt(tokens1[1]))) {
-				System.out.println(sp.distTo(Integer.parseInt(tokens1[1])));
+				double dis = sp.distTo(Integer.parseInt(tokens1[1]));
+				System.out.println(dis);
 			}
 			else {
 				System.out.println("No Path Found.");
@@ -57,16 +60,15 @@ public class Solution {
 			break;
 
 		case "ViaPaths":
-			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
-			// third is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
 			String[] tokens2 = sc.nextLine().split(" ");
-			DijkstraSP sp1 = new DijkstraSP(g, Integer.parseInt(tokens2[0]));
-			DijkstraSP sp2 = new DijkstraSP(g, Integer.parseInt(tokens2[1]));
-			if(sp1.hasPathTo(Integer.parseInt(tokens2[1])) && sp2.hasPathTo(Integer.parseInt(tokens2[2]))) {
-				System.out.println(sp1.distTo(Integer.parseInt(tokens2[1])) + sp2.distTo(Integer.parseInt(tokens2[2])));
+			DijkstraSP sp1 = new DijkstraSP(g,
+				Integer.parseInt(tokens2[0]));
+			DijkstraSP sp2 = new DijkstraSP(g,
+				Integer.parseInt(tokens2[1]));
+			if(sp1.hasPathTo(Integer.parseInt(tokens2[1])) && 
+				sp2.hasPathTo(Integer.parseInt(tokens2[2]))) {
+				System.out.println(sp1.distTo(Integer.parseInt(tokens2[1])) +
+					sp2.distTo(Integer.parseInt(tokens2[2])));
 				Iterable<DirectedEdge> it1 = sp1.pathTo(Integer.parseInt(tokens2[1]));
 				for(DirectedEdge e : it1) {
 					System.out.print(e.from() + " ");
@@ -91,7 +93,6 @@ public class Solution {
 			// 	System.out.print(e);
 			// }
 			break;
-
 		default:
 			break;
 		}
