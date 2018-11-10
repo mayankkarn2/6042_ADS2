@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
