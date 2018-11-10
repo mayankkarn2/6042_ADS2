@@ -54,8 +54,7 @@ final class Solution {
 				int temp = Integer.parseInt(tokens1[1]);
 				double dis = sp.distTo(temp);
 				System.out.println(dis);
-			}
-			else {
+			} else {
 				System.out.println("No Path Found.");
 			}
 			break;
@@ -68,33 +67,24 @@ final class Solution {
 				Integer.parseInt(tokens2[1]));
 			int temp1 = Integer.parseInt(tokens2[1]);
 			int temp2 = Integer.parseInt(tokens2[2]);
-			if(sp1.hasPathTo(temp1) &&
-				sp2.hasPathTo(temp2)) {
-				System.out.println(sp1.distTo(temp1) +
-					sp2.distTo(temp2));
+			if (sp1.hasPathTo(temp1)
+				&& sp2.hasPathTo(temp2)) {
+				System.out.println(sp1.distTo(temp1)
+					+ sp2.distTo(temp2));
 				Iterable<DirectedEdge> it1 = sp1.pathTo(temp1);
-				for(DirectedEdge e : it1) {
+				for (DirectedEdge e : it1) {
 					System.out.print(e.from() + " ");
 				}
 				Iterable<DirectedEdge> it2 = sp2.pathTo(temp2);
 				int last = 0;
-				for(DirectedEdge e : it2) {
+				for (DirectedEdge e : it2) {
 					System.out.print(e.from() + " ");
 					last = e.to();
 				}
 				System.out.print(last);
-			}
-			else {
+			} else {
 				System.out.println("No Path Found.");
 			}
-			// Iterable<Edge> it1 = sp1.pathTo(Integer.parseInt(tokens2[1]));
-			// for(Edge e : it1) {
-			// 	System.out.print(e);
-			// }
-			// Iterable<Edge> it2 = sp2.pathTo(Integer.parseInt(tokens2[2]));
-			// for(Edge e : it2) {
-			// 	System.out.print(e);
-			// }
 			break;
 		default:
 			break;
