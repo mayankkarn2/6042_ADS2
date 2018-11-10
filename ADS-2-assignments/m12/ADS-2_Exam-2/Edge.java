@@ -102,7 +102,9 @@ public class Edge implements Comparable<Edge> {
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
     }
-
+    // public int toEdge() {
+    //     return w;
+    // }
     /**
      * Unit tests the {@code Edge} data type.
      *
