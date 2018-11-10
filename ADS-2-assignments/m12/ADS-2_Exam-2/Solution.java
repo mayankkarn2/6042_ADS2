@@ -50,8 +50,9 @@ final class Solution {
 			String[] tokens1 = sc.nextLine().split(" ");
 			DijkstraSP sp = new DijkstraSP(g,
 				Integer.parseInt(tokens1[0]));
-			if(sp.hasPathTo(Integer.parseInt(tokens1[1]))) {
-				double dis = sp.distTo(Integer.parseInt(tokens1[1]));
+			if (sp.hasPathTo(Integer.parseInt(tokens1[1]))) {
+				int temp = Integer.parseInt(tokens1[1]);
+				double dis = sp.distTo(temp);
 				System.out.println(dis);
 			}
 			else {
@@ -65,15 +66,17 @@ final class Solution {
 				Integer.parseInt(tokens2[0]));
 			DijkstraSP sp2 = new DijkstraSP(g,
 				Integer.parseInt(tokens2[1]));
-			if(sp1.hasPathTo(Integer.parseInt(tokens2[1])) && 
-				sp2.hasPathTo(Integer.parseInt(tokens2[2]))) {
-				System.out.println(sp1.distTo(Integer.parseInt(tokens2[1])) +
-					sp2.distTo(Integer.parseInt(tokens2[2])));
-				Iterable<DirectedEdge> it1 = sp1.pathTo(Integer.parseInt(tokens2[1]));
+			int temp1 = Integer.parseInt(tokens2[1]);
+			int temp2 = Integer.parseInt(tokens2[2]);
+			if(sp1.hasPathTo(temp1) &&
+				sp2.hasPathTo(temp2)) {
+				System.out.println(sp1.distTo(temp1) +
+					sp2.distTo(temp2));
+				Iterable<DirectedEdge> it1 = sp1.pathTo(temp1);
 				for(DirectedEdge e : it1) {
 					System.out.print(e.from() + " ");
 				}
-				Iterable<DirectedEdge> it2 = sp2.pathTo(Integer.parseInt(tokens2[2]));
+				Iterable<DirectedEdge> it2 = sp2.pathTo(temp2);
 				int last = 0;
 				for(DirectedEdge e : it2) {
 					System.out.print(e.from() + " ");
