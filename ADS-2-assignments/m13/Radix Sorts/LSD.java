@@ -12,7 +12,7 @@ public class LSD {
     protected LSD() {
         //Nothing happens here.
     }
-   /**  
+   /**
      * Rearranges the array of W-character strings in ascending order.
      *
      * @param a the array to be sorted
