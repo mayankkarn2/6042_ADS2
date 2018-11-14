@@ -1,7 +1,18 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
+	private Solution() {
+		//Nothing happens here.
+	}
+	/**
+	 * The main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		sc.nextLine();
