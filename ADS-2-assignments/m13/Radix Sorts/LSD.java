@@ -1,8 +1,14 @@
+/**
+ * Class for lsd.
+ */
 public class LSD {
     private static final int BITS_PER_BYTE = 8;
-
-    // do not instantiate
-    public LSD() { }
+    /**
+     * Constructs the object.
+     */
+    public LSD() {
+        //Nothing happens here.
+    }
 
    /**  
      * Rearranges the array of W-character strings in ascending order.
@@ -12,19 +18,19 @@ public class LSD {
      */
     public static void sort(final String[] a, final int w) {
         int n = a.length;
-        int R = 256;   // extend ASCII alphabet size
+        int radix = 256;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
         for (int d = w-1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
 
             // compute frequency counts
-            int[] count = new int[R+1];
+            int[] count = new int[radix+1];
             for (int i = 0; i < n; i++)
                 count[a[i].charAt(d) + 1]++;
 
             // compute cumulates
-            for (int r = 0; r < R; r++)
+            for (int r = 0; r < radix; r++)
                 count[r+1] += count[r];
 
             // move data
