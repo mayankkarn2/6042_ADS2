@@ -1,14 +1,11 @@
 Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\LSD.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\LSD.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\LSD.java:13: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\LSD.java:15: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\Solution.java:6: Class Solution should be declared as final. [FinalClass]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m13\Radix Sorts\Solution.java:21:20: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 4 errors.
