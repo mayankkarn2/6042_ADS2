@@ -43,8 +43,6 @@ public final class Solution {
         for (String s : st) {
             System.out.println(s.toString());
         }
-
-
     }
     /**
      * Loads words.
