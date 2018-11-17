@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:53:47: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 1 errors.
