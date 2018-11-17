@@ -1,7 +1,7 @@
-/**
- * Files import.
- */
-import java.io.File;
+// /**
+//  * Files import.
+//  */
+// import java.io.File;
 /**
  * Scanner import.
  */
@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -23,7 +23,7 @@ class Solution {
      *
      * @throws     Exception  { exception_description }
      */
-    public static void main(String[] args) throws Exception{
+    public static void main(final String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         String synsets = sc.nextLine();
         String hypernyms = sc.nextLine();
@@ -42,7 +42,7 @@ class Solution {
                 } else {
                     System.out.println(wrdnet.getDigraph());
                 }
-            } 
+            }
             if (input.equals("Queries")) {
                 while (sc.hasNextLine()) {
                     String[] tokens = sc.nextLine().split(" ");
@@ -50,7 +50,8 @@ class Solution {
                         wrdnet.sap(tokens[0], tokens[1]);
                         System.out.println("distance = "
                             + wrdnet.distance(tokens[0], tokens[1])
-                            + ", ancestor = " + wrdnet.sap(tokens[0], tokens[1]));
+                            + ", ancestor = " +
+                            wrdnet.sap(tokens[0], tokens[1]));
                     } catch (Exception e) {
                         System.out.println("IllegalArgumentException");
                     }

@@ -242,7 +242,7 @@ distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
-	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:60)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:61)
 	at SAP.<init>(SAP.java:10)
 	at WordNet.sap(WordNet.java:158)
 	at Solution.main(Solution.java:50)

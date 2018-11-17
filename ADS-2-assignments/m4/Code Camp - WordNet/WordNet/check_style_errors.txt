@@ -1,10 +1,4 @@
 Starting audit...
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:4:8: Unused import - java.io.File. [UnusedImports]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:12: Class Solution should be declared as final. [FinalClass]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26:60: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:53: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\6042_ADS2\6042_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:53:47: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
