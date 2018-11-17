@@ -31,7 +31,7 @@ class Solution {
             WordNet wrdnet = new WordNet(synsets, hypernyms);
             String input = sc.nextLine();
             if (wrdnet.gethasCycle()) {
-                System.out.println("Cycle detect");
+                System.out.println("Cycle detected");
                 return;
             }
 

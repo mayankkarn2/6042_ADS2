@@ -248,11 +248,11 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-Cycle detect
+Cycle detected
 ----------------------------------------
 
