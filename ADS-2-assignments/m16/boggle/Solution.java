@@ -32,7 +32,7 @@ public class Solution {
 			for (String word : solver.getAllValidWords(board)) {
 				score += solver.scoreOf(word);
 			}
-			StdOut.println("Score =" + score);
+			StdOut.println("Score = " + score);
 			break;
 
 		default:
@@ -46,7 +46,7 @@ public class Solution {
 				for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}
-				StdOut.println("Score =" + score);
+				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}
