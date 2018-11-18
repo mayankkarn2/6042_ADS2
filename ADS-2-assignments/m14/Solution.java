@@ -1,9 +1,3 @@
-/**
- * assignmet 1- ADS 2;.
- * date 13-11-18;
- * author harinatha reddy;
- * problem solved by using TST(Teninary Search Tries)
- */
 import java.util.Scanner;
 /**
  * Class for solution.
@@ -54,5 +48,5 @@ public final class Solution {
         String[] words = in.readAllStrings();
         return words;
     }
-
 }
+
